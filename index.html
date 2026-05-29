@@ -17,12 +17,47 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="">
     <header>
       <div class="container">
         <a href="./index.html" class="logo"
           ><span class="logo-span">Web</span>Studio</a
         >
+        <div class="list-menu">
+          <nav>
+            <ul class="nav-list">
+              <li>
+                <a href="./index.html" class="nav-link studio-link">Studio</a>
+              </li>
+              <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+              <li><a href="#contacts" class="nav-link">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <address class="addresses" id="contacts">
+            <ul class="ad-list">
+              <li>
+                <a href="mailto:info@devstudio.com" class="ad-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="ad-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+        >
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </div>
     </header>
     <main>
@@ -38,6 +73,11 @@
           <h2 class="visually-hidden">Our Features</h2>
           <ul class="features">
             <li class="card">
+              <div class="feature-background">
+                <svg class="feature-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-radar"></use>
+                </svg>
+              </div>
               <h3>Strategy</h3>
               <p>
                 Our goal is to identify the business problem to walk away with
@@ -45,6 +85,11 @@
               </p>
             </li>
             <li class="card">
+              <div class="feature-background">
+                <svg class="feature-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3>Punctuality</h3>
               <p>
                 Bring the key message to the brand's audience for the best price
@@ -52,6 +97,11 @@
               </p>
             </li>
             <li class="card">
+              <div class="feature-background">
+                <svg class="feature-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3>Diligence</h3>
               <p>
                 Research and confirm brands with the strongest digital growth
@@ -59,6 +109,11 @@
               </p>
             </li>
             <li class="card">
+              <div class="feature-background">
+                <svg class="feature-icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3>Technologies</h3>
               <p>
                 Design practice focused on digital experiences. We bring forth a
@@ -77,7 +132,7 @@
               <div class="team-card">
                 <img
                   src="./images/mark.jpg"
-                  srcset="./images/mark.jpg 1x, ./images/mark2@2x.jpeg 2x"
+                  srcset="./images/mark.jpg 1x, ./images/mark2.jpg 2x"
                   alt="Mark Guerrero"
                   height="260"
                   width="264"
@@ -132,7 +187,7 @@
             <li class="card">
               <div class="team-card">
                 <img
-                  srcset="./images/tom.jpg 1x, ./images/tom2@2x.jpeg 2x"
+                  srcset="./images/tom.jpg 1x, ./images/tom2.jpg 2x"
                   src="./images/tom.jpg"
                   alt="Tom Ford"
                   height="260"
@@ -188,10 +243,9 @@
             <li class="card">
               <div class="team-card">
                 <img
-                  srcset="./images/camila.jpg 1x, ./images/camila2@2x.jpeg 2x"
+                  srcset="./images/camila.jpg 1x, ./images/camila2.jpg 2x"
                   src="./images/camila.jpg"
                   alt="Camila Garcia"
-                  tom
                   height="260"
                   width="264"
                 />
@@ -245,7 +299,7 @@
             <li class="card">
               <div class="team-card">
                 <img
-                  srcset="./images/daniel.jpg 1x, ./images/daniel2@2x.jpeg 2x"
+                  srcset="./images/daniel.jpg 1x, ./images/daniel2.jpg 2x"
                   src="./images/daniel.jpg"
                   alt="Daniel Wilson"
                   height="260"
@@ -310,9 +364,11 @@
                 <div class="over">
                   <img
                     src="./images/Portfolio/bank.jpg"
+                    srcset="
+                      ./images/Portfolio/bank.jpg  1x,
+                      ./images/Portfolio/bank2.jpg 2x
+                    "
                     alt="Banking App"
-                    width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -333,9 +389,11 @@
                 <div class="over">
                   <img
                     src="./images/Portfolio/pay.jpg"
+                    srcset="
+                      ./images/Portfolio/pay.jpg  1x,
+                      ./images/Portfolio/pay2.jpg 2x
+                    "
                     alt="Cashless Payment"
-                    width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -356,9 +414,11 @@
                 <div class="over">
                   <img
                     src="./images/Portfolio/app.jpg"
+                    srcset="
+                      ./images/Portfolio/app.jpg  1x,
+                      ./images/Portfolio/app2.jpg 2x
+                    "
                     alt="Meditation App"
-                    width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -379,9 +439,11 @@
                 <div class="over">
                   <img
                     src="./images/Portfolio/taxi.jpg"
+                    srcset="
+                      ./images/Portfolio/taxi.jpg  1x,
+                      ./images/Portfolio/taxi2.jpg 2x
+                    "
                     alt="Taxi Service"
-                    width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -402,9 +464,11 @@
                 <div class="over">
                   <img
                     src="./images/Portfolio/screen.jpg"
+                    srcset="
+                      ./images/Portfolio/screen.jpg  1x,
+                      ./images/Portfolio/screen2.jpg 2x
+                    "
                     alt="Screen Illustrations"
-                    width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -425,9 +489,11 @@
                 <div class="over">
                   <img
                     src="./images/Portfolio/online-courses.jpg"
+                    srcset="
+                      ./images/Portfolio/online-courses.jpg  1x,
+                      ./images/Portfolio/online-courses2.jpg 2x
+                    "
                     alt="Online Courses"
-                    width="360"
-                    height="300"
                   />
                   <div class="overlay">
                     <p>
@@ -584,6 +650,75 @@
           </label>
           <button class="send-btn" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+
+    <div class="modal-menu">
+      <button type="button" class="close-btn">
+        <svg class="cross-svg" width="8" height="8" viewBox="0 0 8 8">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="menu">
+        <nav>
+          <ul class="nav-list">
+            <li>
+              <a href="./index.html" class="nav-link studio-link">Studio</a>
+            </li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#contacts" class="nav-link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <address class="addresses">
+            <ul class="ad-list">
+              <li>
+                <a href="mailto:info@devstudio.com" class="ad-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="ad-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <!--#region social-icons-->
+          <ul class="socials">
+            <li>
+              <a href="https://www.instagram.com/" class="social-background">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/" class="social-background">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" class="social-background">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://ru.linkedin.com/" class="social-background">
+                <svg class="social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!--#endregion-->
+        </div>
       </div>
     </div>
   </body>
