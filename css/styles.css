@@ -75,6 +75,7 @@ img {
 }
 
 .container {
+  width: 100%;
   max-width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -165,8 +166,8 @@ header .logo {
 
 .title-section {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/hero-img.jpg);
@@ -175,6 +176,11 @@ header .logo {
   margin: 0 auto;
   background-position: center;
   background-size: cover;
+}
+
+.title-section .container {
+  padding-left: 52px;
+  padding-right: 52px;
 }
 
 footer .section {
@@ -200,10 +206,6 @@ footer .section {
   line-height: 1.071;
   color: #ffffff;
   text-align: center;
-}
-
-.title-section .container {
-  padding: 0 52px;
 }
 
 .order-btn {
@@ -271,8 +273,9 @@ footer .section {
 .team-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  row-gap: 72px;
   margin-top: 72px;
+  align-items: center;
 }
 
 .team-card {
@@ -897,6 +900,16 @@ body.no-scroll {
 }
 
 @media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .modal-menu.is-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
   /* -----HEADER----- */
 
   header .container {
@@ -959,8 +972,14 @@ body.no-scroll {
   }
 
   /* -----hero-section----- */
+  .title-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
   .title-section .container {
-    padding: 0 136px;
+    padding-left: 136px;
+    padding-right: 136px;
   }
 
   .page-title {
@@ -1030,6 +1049,8 @@ body.no-scroll {
 
   .modal {
     max-width: 408px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .contact-input {
@@ -1039,13 +1060,20 @@ body.no-scroll {
 
 @media (min-width: 1158px) {
   .container {
+    width: 1440px;
     padding-left: 156px;
     padding-right: 156px;
   }
 
   /* -----hero-section----- */
+  .title-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
   .title-section .container {
-    padding: 0 472px;
+    padding-left: 472px;
+    padding-right: 472px;
   }
 
   .order-btn {
@@ -1064,10 +1092,6 @@ body.no-scroll {
 
   .feature .card h3 {
     font-size: 20px;
-  }
-
-  .features .card {
-    width: 100%;
   }
 
   /* -----portfolio----- */
@@ -1112,5 +1136,15 @@ body.no-scroll {
 
   header .container {
     padding: 0 156px;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .title-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      )
+      url(../images/hero-img2.jpg);
   }
 }
