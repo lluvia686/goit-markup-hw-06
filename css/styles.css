@@ -75,12 +75,16 @@ img {
 }
 
 .container {
+  width: 320px;
   width: 100%;
   max-width: 100%;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
+
+  display: grid;
+  place-items: center;
 }
 
 header .container {
@@ -135,7 +139,13 @@ header .logo {
 .features .card h3 {
   padding-bottom: 8px;
   font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
   font-weight: 700;
+}
+
+.features p {
+  font-weight: 500;
 }
 
 .team .card {
@@ -152,7 +162,7 @@ header .logo {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio .card:hover {
+.portfolio .card {
   box-shadow:
     0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.08),
@@ -172,7 +182,7 @@ header .logo {
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/hero-img.jpg);
   background-repeat: no-repeat;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   background-position: center;
   background-size: cover;
@@ -305,8 +315,13 @@ footer .section {
 
 .social-icon {
   height: 16px;
-  max-width: 16px;
+  width: 16px;
   fill: #f4f4fd;
+}
+
+.modal-menu .social-icon {
+  height: 24px;
+  width: 24px;
 }
 
 footer .social-icon {
@@ -858,8 +873,8 @@ body.no-scroll {
 
 .ad-link {
   color: #434455;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   display: block;
 }
@@ -952,6 +967,8 @@ body.no-scroll {
 
   .ad-link {
     font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
   }
 
   .studio-link {
@@ -1014,6 +1031,11 @@ body.no-scroll {
     align-items: center;
     justify-content: center;
   }
+
+  .team .card h3 {
+    justify-content: center;
+  }
+
   /* -----portfolio----- */
   .portfolio-list {
     row-gap: 72px;
@@ -1061,8 +1083,6 @@ body.no-scroll {
 @media (min-width: 1158px) {
   .container {
     width: 1440px;
-    padding-left: 156px;
-    padding-right: 156px;
   }
 
   /* -----hero-section----- */
@@ -1092,11 +1112,29 @@ body.no-scroll {
 
   .feature .card h3 {
     font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+  }
+
+  .features p {
+    font-weight: 400;
   }
 
   /* -----portfolio----- */
   .portfolio-list {
     row-gap: 48px;
+  }
+
+  .portfolio .card {
+    box-shadow: none;
+  }
+
+  .portfolio .card:hover {
+    box-shadow:
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 2px 1px 0px rgba(46, 47, 66, 0.08);
   }
 
   .portfolio-card img {
@@ -1132,6 +1170,8 @@ body.no-scroll {
 
   .ad-link {
     font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   header .container {
