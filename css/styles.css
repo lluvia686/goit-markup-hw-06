@@ -939,7 +939,7 @@ body.no-scroll {
     flex-grow: 1;
   }
 
-  .logo {
+  header .logo {
     padding-right: 120px;
   }
 
@@ -1087,8 +1087,13 @@ body.no-scroll {
     padding-right: 15px;
   }
 
+  header .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   /* -----header----- */
-  .logo {
+  header .logo {
     padding-right: 76px;
   }
 
