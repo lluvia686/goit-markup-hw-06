@@ -849,7 +849,7 @@ body.no-scroll {
 .nav-link {
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
   display: block;
@@ -873,6 +873,10 @@ body.no-scroll {
   line-height: 1.2;
   letter-spacing: 0.02em;
   display: block;
+}
+
+.modal-menu .tel-link {
+  color: #4d5ae5;
 }
 
 .ad-list {
