@@ -76,8 +76,6 @@ img {
 
 .container {
   width: 320px;
-  width: 100%;
-  max-width: 100%;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -1085,10 +1083,16 @@ body.no-scroll {
     padding-right: 15px;
   }
 
+  /* -----header----- */
+  .logo {
+    padding-right: 76px;
+  }
+
   /* -----hero-section----- */
   .title-section {
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
   }
 
   .order-btn {
@@ -1172,10 +1176,6 @@ body.no-scroll {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-  }
-
-  header .container {
-    padding: 0 156px;
   }
 }
 
