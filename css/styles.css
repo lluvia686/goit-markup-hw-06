@@ -1124,6 +1124,14 @@ body.no-scroll {
     font-weight: 400;
   }
 
+  .features {
+    flex-wrap: wrap;
+  }
+
+  .features .card {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
   /* -----portfolio----- */
   .portfolio-list {
     row-gap: 48px;
@@ -1141,14 +1149,10 @@ body.no-scroll {
   }
 
   .portfolio-card img {
-    width: 360px;
+    width: 100%;
   }
 
   .team-list {
-    flex-wrap: nowrap;
-  }
-
-  .features {
     flex-wrap: nowrap;
   }
 
